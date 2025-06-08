@@ -16,7 +16,7 @@ class prime {
                 if (i % j == 0) {
                     count++;
                 }
-                else if(i==1 || i==0){
+                 else if(i==1 || i==0){
                     count++;
                 }
             }
