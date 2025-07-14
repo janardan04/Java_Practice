@@ -26,6 +26,20 @@ public class Constructor_exx {
         rectangle r2 = new rectangle(5, 8);
         // System.out.println(r.volume());
 
-        System.out.println(r2.volume());
+        //array of objects
+        rectangle r3[] = new rectangle[3];
+
+        r3[0] = new rectangle(5, 6);
+
+        r3[1] = new rectangle(5, 20);
+
+        r3[2] = new rectangle(10, 6);
+
+        System.out.println(r3[0].volume());
+
+        System.out.println(r3[1].volume());
+
+        System.out.println(r3[2].volume());
+
     }
 }
