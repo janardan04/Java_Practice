@@ -1,0 +1,23 @@
+public class recursion {
+    static int fact(int n){
+        if(n==0 || n==1){
+            return 1;
+        }else{
+            return n*fact(n-1);
+        }
+    }
+    static void Pattern(int n){
+        if(n>0){
+            
+            for(int i=n;i>0;i--){
+                System.out.print("*");
+            }
+            System.out.println();
+            Pattern(n-1);
+        }
+    }
+    public static void main(String[] args) {
+        System.out.println(fact(5));
+        Pattern(6);
+        }
+}

@@ -1,20 +1,31 @@
-import java.util.*;
+import java.util.HashSet;
+import java.util.Iterator;
 public class hashset_learn {
     public static void main(String[] args) {
         
     
-    Set<Integer> set = new HashSet <>();
+    HashSet s = new HashSet();
+    
+    s.add(852);
+    s.add("Jayesh");
+    s.add(85.33);
+    s.add(65);
+    s.add(96);
+    s.add("Jayesh");
+    s.add(null);
+    s.add(null);
+    System.out.println(s);
 
-    set.add(152632655);
-    set.add(32);
-    set.add(12);
-    System.out.println(set);
-    System.out.println(set.size());
-    System.out.println(set.contains(12));
-    set.remove(12);
-    System.out.println(set.isEmpty());
-    set.clear();
-    System.out.println(set);
+    Iterator itr=s.iterator();
+    while(itr.hasNext()){
+        System.out.println(itr.next());
+    }
+    System.out.println(s.contains(852));
+    s.remove("Jayesh");
+    System.out.println(s);
+    System.out.println(s.size());
+    s.clear();
+    System.out.println(s);
     
 
     

@@ -1,21 +1,20 @@
-import java.util.*;
+import java.util.Stack;
 public class Stack1 {
     public static void main(String[] args) {
-       Stack<String> s= new Stack<>();
-        s.push("janardhan");
-        s.push("kumar");
-        s.push("yadav");  
+       Stack s=new Stack<>();
+       s.push("jayesh");
+       s.push(520);
+       s.push(85);
+       s.push(100.220);
         System.out.println(s);
-            System.out.println("The top element of the stack is: "+s.peek());
-          s.pop();
-          System.out.println("The top element of the stack after pop is: "+s.peek());
-          System.out.println("The size of the stack is: "+s.size());
-          if(s.isEmpty()){
-              System.out.println("The stack is empty");
-          }
-          else{
-              System.out.println("The stack is not empty");
-          }
-      
+
+        System.out.println(s.peek());
+        System.out.println(s.pop());
+        System.out.println(s);
+
+        System.out.println(s.search(520));
+        System.out.println(s.search(999));
+        System.out.println(s.empty());
+        System.out.println(s.isEmpty());
         }
 }

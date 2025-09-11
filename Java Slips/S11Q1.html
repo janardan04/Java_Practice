@@ -1,0 +1,19 @@
+<!-- Slip - 11 Q1 [JAVA] -->
+<!-- Design an HTML page which passes customer number to a search servlet. The servlet searches for the customer number in a database (customer table) and returns customer details if found the number otherwise display error message. -->
+
+<!-- This is the HTML file for this program there is also a Servlet file. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Customer</title>
+</head>
+<body>
+    <h1>Search Customer</h1>
+    <form action="SearchServlet" method="post">
+        <label for="customerNum">Enter customer number:</label>
+        <input type="number" id="customerNum" name="customerNum" required>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>

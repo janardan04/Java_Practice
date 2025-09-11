@@ -17,13 +17,13 @@ public class runn {
     public static void main(String[] args) {
         runna r1=new runna();//in this the logic that we want to thread to execute it is like the task
         Thread t1=new Thread(r1);//this basically said that when you start run whateverr that is defined in r1.run() it is like the worker
-
+        r1.run();
         t1.start();
 
-        int i=1;
-        while (true) { 
-         System.out.println(i+" world");   
-        }
+        // int i=1;
+        // while (true) { 
+        //  System.out.println(i+" world");   
+        // }
     }    
 }
 //Imagine r1 is a "document" (task to print),

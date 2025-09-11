@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pascal's Triangle Flowchart</title>
+</head>
+<body>
+    <h1>Flowchart for Pascal's Triangle Code</h1>
+    <svg width="800" height="1000">
+        <!-- Start -->
+        <rect x="350" y="20" width="100" height="50" style="fill:lightblue;stroke:black;stroke-width:2" />
+        <text x="375" y="50" font-size="14">Start</text>
+
+        <!-- Initialize Variables -->
+        <rect x="250" y="90" width="300" height="50" style="fill:lightgreen;stroke:black;stroke-width:2" />
+        <text x="270" y="120" font-size="14">Initialize c = 0, n = 5</text>
+
+        <!-- Outer Loop Start -->
+        <rect x="250" y="170" width="300" height="50" style="fill:lightyellow;stroke:black;stroke-width:2" />
+        <text x="270" y="200" font-size="14">Outer Loop: for i = 0 to n-1</text>
+
+        <!-- Inner Loop 1 (Spaces) -->
+        <rect x="250" y="250" width="300" height="50" style="fill:lightpink;stroke:black;stroke-width:2" />
+        <text x="270" y="280" font-size="14">Inner Loop: for s = 1 to n-i</text>
+        <text x="270" y="300" font-size="14">Print space " "</text>
+
+        <!-- Inner Loop 2 (Coefficients) -->
+        <rect x="250" y="330" width="300" height="50" style="fill:lightcoral;stroke:black;stroke-width:2" />
+        <text x="270" y="360" font-size="14">Inner Loop: for j = 0 to i</text>
+
+        <!-- Condition Check -->
+        <rect x="150" y="410" width="500" height="50" style="fill:khaki;stroke:black;stroke-width:2" />
+        <text x="170" y="440" font-size="14">If (i == 0 || j == 0) then c = 1 else c = c * (i - j + 1) / j</text>
+
+        <!-- Print Coefficient -->
+        <rect x="250" y="490" width="300" height="50" style="fill:lightsteelblue;stroke:black;stroke-width:2" />
+        <text x="270" y="520" font-size="14">Print c</text>
+
+        <!-- End of Inner Loops -->
+        <rect x="250" y="570" width="300" height="50" style="fill:thistle;stroke:black;stroke-width:2" />
+        <text x="270" y="600" font-size="14">Print newline</text>
+
+        <!-- Outer Loop Repeat -->
+        <rect x="250" y="650" width="300" height="50" style="fill:peachpuff;stroke:black;stroke-width:2" />
+        <text x="270" y="680" font-size="14">Next i</text>
+
+        <!-- End -->
+        <rect x="350" y="750" width="100" height="50" style="fill:lightblue;stroke:black;stroke-width:2" />
+        <text x="375" y="780" font-size="14">End</text>
+
+        <!-- Connecting Lines -->
+        <line x1="400" y1="70" x2="400" y2="90" style="stroke:black;stroke-width:2" />
+        <line x1="400" y1="140" x2="400" y2="170" style="stroke:black;stroke-width:2" />
+        <line x1="400" y1="220" x2="400" y2="250" style="stroke:black;stroke-width:2" />
+        <line x1="400" y1="300" x2="400" y2="330" style="stroke:black;stroke-width:2" />
+        <line x1="400" y1="380" x2="400" y2="410" style="stroke:black;stroke-width:2" />
+        <line x1="400" y1="460" x2="400" y2="490" style="stroke:black;stroke-width:2" />
+        <line x1="400" y1="540" x2="400" y2="570" style="stroke:black;stroke-width:2" />
+        <line x1="400" y1="620" x2="400" y2="650" style="stroke:black;stroke-width:2" />
+        <line x1="400" y1="700" x2="400" y2="750" style="stroke:black;stroke-width:2" />
+    </svg>
+</body>
+</html>
