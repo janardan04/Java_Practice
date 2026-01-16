@@ -1,4 +1,3 @@
-
 public class Multiple_catch {
 
     public static void main(String[] args) {
